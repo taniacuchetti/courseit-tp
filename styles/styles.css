@@ -1,3 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
 
+.wrapper {
+  font-family: "Open Sans", sans-serif;
+}
+.wrapper .header {
+  max-width: 100vw;
+  background-color: rgba(0, 0, 0, 0.801218);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.wrapper .header .logo-img {
+  padding: 11px 0px 9px 65px;
+  max-width: 190px;
+  max-height: 80px;
+}
+.wrapper .header .nav {
+  padding: 20px 0px 9px 65px;
+}
+.wrapper .header .nav .link {
+  font-size: 1em;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.wrapper .hero {
+  min-height: 100vh;
+  background-image: url("../assets/img/portada.png");
+  /* The image used */
+  background-color: gray;
+  /* Used if the image is unavailable */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+}
+.wrapper .hero .hero-content {
+  margin-left: 4em;
+  padding-top: 7.5em;
+  color: #ffffff;
+}
+.wrapper .hero .hero-content .hero-flywheel {
+  display: inline-block;
+  padding-bottom: 0.9em;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.wrapper .hero .hero-content .hero-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: -5px;
+  font-size: 6.1em;
+  font-weight: 700;
+  line-height: 0.85em;
+}
+.wrapper .hero .hero-content .hero-button {
+  background-color: rgba(157, 151, 151, 0.541521);
+  border-radius: 9px;
+  color: #e9e9e9;
+  margin-top: 0.7em;
+  margin-bottom: 1.8em;
+  margin-right: 1.7em;
+  padding: 20px 41px 18px 41px;
+  border: none;
+  font-size: 1em;
+  font-weight: 200;
+}
+.wrapper .hero .hero-content .hero-button:hover {
+  background-color: rgba(250, 250, 250, 0.479);
+}
+.wrapper .hero .hero-content .hero-button:focus {
+  outline: 0;
+}
+.wrapper .hero .hero-content .hero-paragraph {
+  font-size: 1.2em;
+  font-weight: 200;
+  max-width: 450px;
+  line-height: 1.4em;
+}
+.wrapper .series-wrapper {
+  margin-top: -130px;
+  color: #ffffff;
+  background-color: #000000;
+  padding-left: 4em;
+  padding-bottom: 50px;
+}
+.wrapper .series-wrapper .carousel .series-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-bottom: 1.4em;
+  padding-top: 45px;
+}
+.wrapper .series-wrapper .carousel .series {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.wrapper .series-wrapper .carousel .series .serie {
+  padding-right: 16px;
+  scroll-snap-align: start;
+}
+.wrapper .series-wrapper .carousel .series .serie .serie-img {
+  padding-bottom: 11px;
+}
+.wrapper .series-wrapper .carousel .series .serie .gray-bar {
+  height: 7px;
+  background-color: gray;
+  width: 341px;
+  position: relative;
+}
+.wrapper .series-wrapper .carousel .series .serie .gray-bar .red-bar {
+  position: absolute;
+  background-color: red;
+  width: 80%;
+  height: 100%;
+}
+.wrapper .series-wrapper .carousel .series .serie .gray-bar .red-bar-2 {
+  position: absolute;
+  background-color: red;
+  width: 30%;
+  height: 100%;
+}
+.wrapper .series-wrapper .carousel .series .serie .gray-bar .red-bar-3 {
+  position: absolute;
+  background-color: red;
+  width: 40%;
+  height: 100%;
+}
+.wrapper .series-wrapper .carousel .series .serie .gray-bar .red-bar-4 {
+  position: absolute;
+  background-color: red;
+  width: 90%;
+  height: 100%;
+}
+.wrapper .series-wrapper .carousel .series .serie .gray-bar .red-bar-5 {
+  position: absolute;
+  background-color: red;
+  width: 70%;
+  height: 100%;
+}
 
 /*# sourceMappingURL=styles.css.map */
