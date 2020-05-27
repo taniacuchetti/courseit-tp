@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box; 
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper{
+  font-family: 'Open Sans', sans-serif;
+    .header{
+      max-width: 100vw;
+      background-color: rgba(0, 0, 0, 0.801218);
+      display:flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+        .logo-img{
+          padding:11px 0px 9px 65px; 
+          max-width: 190px;
+          max-height: 80px;   
+        }
+            .nav{
+              padding:20px 0px 9px 65px; 
+              white-space: nowrap; //para que los link del menú de nav no genere el salto de linea. "wrap" es el opuesto
+                .link{
+                  font-size:1em;
+                  font-weight: 600;
+                  color:#ffffff;
+                  text-decoration: none;
+                  margin-right:15px;
+                  padding:20px 0 20px 0;
+                }
+            }
+    }
+    .hero {
+      min-height:100vh;
+      background-image: url('../assets/img/breakingbad04.png'); /* The image used */
+      background-color: -webkit-linear-gradient(rgba(0,0,0,0.582) 0%,#000000 100%);
+      background-blend-mode: multiply;
+      background-size:cover; /* Resize the background image to cover the entire container */
+      //background-position:center; /* Center the image */
+      //background-repeat:no-repeat; /* Do not repeat the image */
+      
+        .hero-content{
+          margin-left:4em;
+          padding-top:4.6em;
+          color:#ffffff;
+            .hero-logo{
+            padding-bottom:12px;    
+            }
+            
+            .serie-details{
+              padding-bottom:1.7em;  
+              .green{
+              font-size:1em;
+              font-weight: 600;
+              color:#009C04;
+              padding-right:10px;
+              }
+              .year{
+              font-size:1em;
+              font-weight: 200;
+              color:#ffffff; 
+              padding-right:10px; 
+              }
+              .age{
+              border:0.5px solid white;
+              padding:0px 9px 0px 10px;
+              border-radius:5px; 
+              }
+              .bold{
+              padding-left:10px;
+              }  
+            }
+            
+            .hero-button{
+              background-color: rgba(157, 151, 151, 0.541521);
+              border-radius:9px;
+              color:#e9e9e9;
+              margin-top:0.7em;
+              margin-bottom:2em;
+              margin-right:1.7em;
+              padding: 20px 41px 18px 41px;
+              border:none;
+              font-size:1em;
+              font-weight: 200;
+              &:hover{background-color: rgba(250, 250, 250, 0.479);}
+              &:focus {outline:0;} 
+            }
+            
+
+            .hero-button1{
+                background-color:#ED0A1D;
+                border-radius:9px;
+                color:#e9e9e9;
+                margin-top:0.7em;
+                margin-bottom:1.4em;
+                margin-right:1.7em;
+                padding: 20px 41px 18px 41px;
+                border:none;
+                font-size:1em;
+                font-weight: 200;
+                &:hover{background-color: #ffffff; color:#ED0A1D;}
+                &:focus {outline:0;}   
+              }
+              
+            
+            .hero-thump{
+            vertical-align: middle;  
+            padding-right:15px; 
+           
+            height:55px;
+            }  
+
+            .hero-paragraph{
+              width:100%;
+              font-size:1.2em;
+              font-weight:200;
+              max-width:500px;
+              line-height:1.4em;   
+            }
+
+            
+        } 
+    }    
+    .series-wrapper{ 
+        
+      margin-top:-50px;   
+      color:#ffffff;
+      background-color:#000000;
+      padding-left:4em; 
+      padding-bottom:80px;
+        .carousel{
+          .series-title{
+            font-size:1.2em;
+            font-weight:600;
+            padding-bottom:1.4em; 
+            padding-top: 0px;
+          }
+          .series{
+            display:flex;
+            width:100%;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -ms-overflow-style:none;
+            scrollbar-width:none;
+            opacity:transparent;
+            
+              .serie{
+                display:flex;
+                align-items:center;
+                flex-direction: column;
+                padding-right:16px;
+                scroll-snap-align: start;
+                
+               }   
+               
+            }
+            
+        }
+    }
+
+}  
