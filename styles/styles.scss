@@ -1,6 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
+$desktop-fhd: 1920px;
+$desktop-hd-plus: 1440px;
+$desktop-hd: 1366px;
+$laptop-breakpoint: 1024px;
+$laptop-small: 800px;
+$tablet: 768px;
+$phone-plus: 600px;
+$phone: 480px;
+$phone-small: 360px;
+$phone-extra-small: 320px; 
+
 *,
 *:after,
 *:before {
@@ -28,15 +39,22 @@ html {
         }
             .nav{
               padding:20px 0px 9px 65px; 
+              white-space: nowrap; 
                 .link{
                   font-size:1em;
                   font-weight: 600;
                   color:#ffffff;
                   text-decoration: none;
                   margin-right:15px;
+                  white-space: nowrap;
+                  visibility:visible; 
+                  @media (max-width:$laptop-breakpoint){
+                    visibility: hidden;  
+                    }
                 }
             }
     }
+    
     .hero {
       min-height:100vh;
       background-image: url('../assets/img/portada.png'); /* The image used */
@@ -93,7 +111,7 @@ html {
       background-color:#000000;
       padding-left:4em; 
       padding-bottom:50px;
-        .carousel{
+      
           .series-title{
             font-size:1.2em;
             font-weight:600;
@@ -108,9 +126,10 @@ html {
           }
           .series{
             display:flex;
-            width:100%;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
+            max-width: 1100px;
+            //overflow-x: auto;
+            //overflow-x:hidden;
+           // scroll-snap-type: x mandatory;
                     
               .serie{
                 display:flex;
@@ -118,11 +137,17 @@ html {
                 flex-direction: column;
                 padding-right:16px;
                 scroll-snap-align: start;
+                outline:none;
+                border:0;
+
                  .serie-img{
                    padding-bottom:11px;
+                   outline:none;
+                   border:0;
                  }
                    .gray-bar{
-                     height:7px;
+                     
+                     height:4px;
                      background-color:gray;
                      width:221px;
                      position:relative;
@@ -160,7 +185,7 @@ html {
                   }   
               }
           }  
-        }
+        
     }
 
 }  

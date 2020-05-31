@@ -28,6 +28,7 @@ html {
 }
 .wrapper .header .nav {
   padding: 20px 0px 9px 65px;
+  white-space: nowrap;
 }
 .wrapper .header .nav .link {
   font-size: 1em;
@@ -35,6 +36,13 @@ html {
   color: #ffffff;
   text-decoration: none;
   margin-right: 15px;
+  white-space: nowrap;
+  visibility: visible;
+}
+@media (max-width: 1024px) {
+  .wrapper .header .nav .link {
+    visibility: hidden;
+  }
 }
 .wrapper .hero {
   min-height: 100vh;
@@ -98,65 +106,67 @@ html {
   padding-left: 4em;
   padding-bottom: 50px;
 }
-.wrapper .series-wrapper .carousel .series-title {
+.wrapper .series-wrapper .series-title {
   font-size: 1.2em;
   font-weight: 600;
   padding-bottom: 1.4em;
   padding-top: 0px;
 }
-.wrapper .series-wrapper .carousel .series-title2 {
+.wrapper .series-wrapper .series-title2 {
   font-size: 1.2em;
   font-weight: 600;
   padding-bottom: 1.4em;
   padding-top: 50px;
 }
-.wrapper .series-wrapper .carousel .series {
+.wrapper .series-wrapper .series {
   display: flex;
-  width: 100%;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  max-width: 1100px;
 }
-.wrapper .series-wrapper .carousel .series .serie {
+.wrapper .series-wrapper .series .serie {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-right: 16px;
   scroll-snap-align: start;
+  outline: none;
+  border: 0;
 }
-.wrapper .series-wrapper .carousel .series .serie .serie-img {
+.wrapper .series-wrapper .series .serie .serie-img {
   padding-bottom: 11px;
+  outline: none;
+  border: 0;
 }
-.wrapper .series-wrapper .carousel .series .serie .gray-bar {
-  height: 7px;
+.wrapper .series-wrapper .series .serie .gray-bar {
+  height: 4px;
   background-color: gray;
   width: 221px;
   position: relative;
 }
-.wrapper .series-wrapper .carousel .series .serie .gray-bar .red-bar {
+.wrapper .series-wrapper .series .serie .gray-bar .red-bar {
   position: absolute;
   background-color: red;
   width: 80%;
   height: 100%;
 }
-.wrapper .series-wrapper .carousel .series .serie .gray-bar .red-bar-2 {
+.wrapper .series-wrapper .series .serie .gray-bar .red-bar-2 {
   position: absolute;
   background-color: red;
   width: 30%;
   height: 100%;
 }
-.wrapper .series-wrapper .carousel .series .serie .gray-bar .red-bar-3 {
+.wrapper .series-wrapper .series .serie .gray-bar .red-bar-3 {
   position: absolute;
   background-color: red;
   width: 40%;
   height: 100%;
 }
-.wrapper .series-wrapper .carousel .series .serie .gray-bar .red-bar-4 {
+.wrapper .series-wrapper .series .serie .gray-bar .red-bar-4 {
   position: absolute;
   background-color: red;
   width: 90%;
   height: 100%;
 }
-.wrapper .series-wrapper .carousel .series .serie .gray-bar .red-bar-5 {
+.wrapper .series-wrapper .series .serie .gray-bar .red-bar-5 {
   position: absolute;
   background-color: red;
   width: 70%;
