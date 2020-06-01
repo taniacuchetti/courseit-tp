@@ -20,6 +20,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 .wrapper .header .logo-img {
   padding: 11px 0px 9px 65px;
@@ -116,31 +117,31 @@ html {
   font-size: 1.2em;
   font-weight: 600;
   padding-bottom: 1.4em;
-  padding-top: 50px;
+  padding-top: 35px;
 }
 .wrapper .series-wrapper .series {
   display: flex;
-  max-width: 1100px;
+  max-width: 100%;
+  margin-left: -5px;
 }
 .wrapper .series-wrapper .series .serie {
-  display: flex;
+  display: flex !important;
   align-items: center;
-  flex-direction: column;
-  padding-right: 16px;
-  scroll-snap-align: start;
+  flex-direction: column !important;
+  justify-content: center !important;
+  margin-left: -17px;
   outline: none;
   border: 0;
 }
 .wrapper .series-wrapper .series .serie .serie-img {
-  padding-bottom: 11px;
-  outline: none;
-  border: 0;
+  padding-bottom: 12px;
 }
 .wrapper .series-wrapper .series .serie .gray-bar {
   height: 4px;
   background-color: gray;
   width: 221px;
   position: relative;
+  margin-left: -20px;
 }
 .wrapper .series-wrapper .series .serie .gray-bar .red-bar {
   position: absolute;
@@ -169,7 +170,7 @@ html {
 .wrapper .series-wrapper .series .serie .gray-bar .red-bar-5 {
   position: absolute;
   background-color: red;
-  width: 70%;
+  width: 50%;
   height: 100%;
 }
 
