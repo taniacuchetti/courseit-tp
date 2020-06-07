@@ -15,8 +15,14 @@ $phone-extra-small: 320px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 999;
   
+  display:none;
+
+          @media (max-width:$tablet){
+          display:inline-block,  
+          }
+
     .toggler {
       position: absolute;
       top: 0;
@@ -54,10 +60,10 @@ $phone-extra-small: 320px;
           align-items: center;
           justify-content: center;
           transition: all 0.4s ease;
-          visibility:hidden;
+          display:none;
 
           @media (max-width:$tablet){
-          visibility: visible;  
+          display:inline-block,  
           }
         }
 
@@ -101,10 +107,15 @@ $phone-extra-small: 320px;
             /* Show Menu */
             .toggler:checked ~ .menu {
             visibility: visible;
+            display:none;
+
+              @media (max-width:$tablet){
+              display:inline-block,  
+              }
             }
 
             .toggler:checked ~ .menu > div {
-            transform: scale(1);
+            transform: translate(250px,0) ease-in-out;
             transition-duration: 23s;
             }
 
@@ -115,13 +126,13 @@ $phone-extra-small: 320px;
 
             .menu {
               position: fixed;
-              top: 50px;
+              top: 54px;
               left: 0;
               width: 210px;
               height: 100%;
               visibility: hidden;
               overflow: hidden;
-              background-color:black;
+              background-color:rgba(0, 0, 0, 0.801218);
               
               
             }

@@ -5,14 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breaking Bad</title>
     <link rel="icon" href="./assets/img/favicon.png" sizes="16x16" type="image/png">
-    <link rel="stylesheet" href="./styles/series-styles.css">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="./styles/series-styles.css">
+    <link rel="stylesheet" href="./styles/menu-styles.css">
+    
 </head>
 <body>
 <div class="wrapper">  
+
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li></b><a href="index.html">Inicio</a></li>
+            <li><a href="#series">Series</a></li>
+            <li><a href="#">Películas</a></li>
+            <li><a href="#agregado">Agregados recientemente</a></li>
+            <li><a href="#">Mi lista</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="hero">  
     <header class="header">
-      <img class="logo-img" src="assets/img/logo_courflix.png" alt="Logo Courflix">
+      <a href="index.html">
+        <img class="logo-img" src="assets/img/logo_courflix.png" alt="Logo Courflix">
+      </a>
       <nav class="nav">
         <a href="./index.html" class="link">Inicio</a>
         <a href="#series" class="link">Series</a>
@@ -23,11 +48,12 @@
     </header>
     <div class="hero-content">
       <img class="hero-logo" src="assets/img/breakingbadlogob.png" atl="Breaking Bad Logo"></br>
+      <h2 class="hero-bb-title">Breaking Bad</h2>
       <div class="serie-details">
       <span class="green">95% de coincidencia</span><span class="year">2016</span><span class="age">16+</span><span class="bold">5 temporadas</span> </br>
       </div>
       <button class="hero-button1">Reproducir</button>
-      <button class="hero-button">+ mi lista</button>
+      <button class="hero-button list">+ mi lista</button>
       <a href="#">
       <img class="hero-thump" src="assets/img/thump-up.png" atl="Pulgar arriba">
       </a>
@@ -39,37 +65,98 @@
   </div>
  
   <div class="series-wrapper">
-    <div class="carousel">
-      <h3 class="series-title">Series</h3>
-      <div class="series">
-        <a href="./serie.html" class="serie">
-          <img src="./assets/img/the-seven.png" alt="The Seven Deadly Sins">
-        </a>
-        <a href="./serie.html" class="serie">
-          <img src="./assets/img/lucifer.png" alt="Lucifer">
-        </a>
-        <a href="./serie.html" class="serie">
-          <img src="./assets/img/the-protector.png" alt="The Protector">
-        </a>
-        <a href="./serie.html" class="serie">
-          <img src="./assets/img/manga.png" alt="Love & dead">
-        </a>
-        <a href="./serie.html" class="serie">
-          <img src="./assets/img/la-orden-secreta.png" alt="La orden secreta">
-        </a>
-        <a href="./serie.html" class="serie">
-          <img src="./assets/img/the-seven.png" alt="The Seven Deadly Sins">
-        </a>
-        <a href="./serie.html" class="serie">
-          <img class="serie-img" src="./assets/img/lucifer.png" alt="Lucifer">
-        </a>
-        <a class="serie-img"  href="./serie.html" class="serie">
-          <img src="./assets/img/the-protector.png" alt="The Protector">
-        </a>
+    <div class="carousel-chap">
+      <h3 class="series-title">Capítulos</h3>
+      <div class="series-chap js-series-series">
+        <div class="serie-chap">
+          <a href="./serie.html" class="chapter">
+            <img href="./serie.html" class="play" src="./assets/img/play.png"></img>
+            <img class="chapter-img" src="./assets/img/BB_chapter_1.png" alt="Breaking Bad Chapter 7">
+          </a>
+          <div class="serie-description">
+            <p class="serie-title">Y la bolsa en el río </p>
+            <p class="serie-paragraph">Because Walter White was talking to his students, I was able to dumb down certain moments of description and dialogue. </p>
+          </div>
+        </div>
+        <div class="serie-chap">
+          <img href="./serie.html" class="play" src="./assets/img/play.png"></img>
+          <a href="./serie.html" class="chapter">
+            <img class="chapter-img" src="./assets/img/BB_chapter_2.png" alt="Breaking Bad Chapter 8">
+          </a>
+          <div class="serie-description">
+          <p class="serie-title">Principio del fin </p>
+          <p class="serie-paragraph"> In the early episodes which held me until we had some help from some honest-to-God chemists. </p>
+        </div>
+        </div>
+        <div class="serie-chap">
+          <img href="./serie.html" class="play" src="./assets/img/play.png"></img>
+          <a href="./serie.html" class="chapter">
+            <img class="chapter-img" src="./assets/img/BB_chapter_8.png" alt="Breaking Bad Chapter 1">
+          </a>
+          <div class="serie-description">
+            <p class="serie-title">El gato en la bolsa </p>
+            <p class="serie-paragraph">Because Walter White was talking to his students, I was able to dumb down certain moments of description and dialogue. </p>
+          </div>
+        </div>
+        <div class="serie-chap">
+          <img href="./serie.html" class="play" src="./assets/img/play.png"></img>
+          <a href="./serie.html" class="chapter">
+            <img class="chapter-img" src="./assets/img/BB_chapter_4.png" alt="Breaking Bad Chapter 2">
+          </a>
+          <div class="serie-description">
+            <p class="serie-title">Y la bolsa en el río </p>
+            <p class="serie-paragraph">In the early episodes which held me until we had some help from some honest-to-God chemists. </p>
+          </div>
+        </div>
+        <div class="serie-chap">
+          <img href="./serie.html" class="play" src="./assets/img/play.png"></img>
+          <a href="./serie.html" class="chapter">
+            <img class="chapter-img" src="./assets/img/BB_chapter_5.png" alt="Breaking Bad Chapter 3">
+          </a>
+        
+          <div class="serie-description">
+            <p class="serie-title">Vuelta a casa </p>
+            <p class="serie-paragraph">Because Walter White was talking to his students, I was able to dumb down certain moments of description and dialogue. </p>
+          </div>
+        </div>
+        <div class="serie-chap">
+          <img href="./serie.html" class="play" src="./assets/img/play.png"></img>
+          <a href="./serie.html" class="chapter">
+            <img class="chapter-img" src="./assets/img/BB_chapter_6.png" alt="Breaking Bad Chapter 4">
+          </a>
+          <div class="serie-description">
+            <p class="serie-title">Otra vuelta más </p>
+            <p class="serie-paragraph">In the early episodes which held me until we had some help from some honest-to-God chemists. </p>
+          </div>
+        </div>
+        <div class="serie-chap">
+          <img href="./serie.html" class="play" src="./assets/img/play.png"></img>
+          <a href="./serie.html" class="chapter">
+            <img class="chapter-img" class="serie-img" src="./assets/img/BB_chapter_7.png" alt="Breaking Bad Chapter 5">
+          </a>
+          <div class="serie-description">
+            <p class="serie-title">Es saco en la bolsa</p>
+            <p class="serie-paragraph">Because Walter White was talking to his students, I was able to dumb down certain moments of description and dialogue. </p>
+          </div>
+        </div>
+        <div class="serie-chap">
+          <img href="./serie.html" class="play" src="./assets/img/play.png"></img>
+          <a href="./serie.html" class="chapter">
+            <img class="chapter-img" src="./assets/img/BB_chapter_3.png" alt="Breaking Bad Chapter 6">
+          </a>
+          <div class="serie-description">
+            <p class="serie-title">El gran final</p>
+            <p class="serie-paragraph">In the early episodes which held me until we had some help from some honest-to-God chemists. </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>   
+</div> 
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>	  
 <script src="./js/index.js"></script>    
 </body>
 </html>

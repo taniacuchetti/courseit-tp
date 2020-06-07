@@ -42,32 +42,68 @@ html {
 }
 @media (max-width: 1024px) {
   .wrapper .header .nav .link {
-    visibility: hidden;
+    display: none;
   }
 }
 .wrapper .hero {
   min-height: 100vh;
   background-image: url("../assets/img/portada.png");
   /* The image used */
-  background-color: gray;
-  /* Used if the image is unavailable */
   background-size: cover;
   /* Resize the background image to cover the entire container */
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
+}
+@media (max-width: 1024px) {
+  .wrapper .hero {
+    min-height: 100%;
+  }
 }
 .wrapper .hero .hero-content {
   margin-left: 4em;
-  padding-top: 10.8em;
+  padding-top: 9em;
   color: #ffffff;
+}
+@media (max-width: 1024px) {
+  .wrapper .hero .hero-content {
+    margin-left: 2em;
+  }
+}
+.wrapper .hero .hero-content .serie-details {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .wrapper .hero .hero-content .serie-details {
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper .hero .hero-content .serie-details {
+    display: inline-block;
+  }
+}
+.wrapper .hero .hero-content .serie-details .year {
+  margin-right: 15px;
+}
+.wrapper .hero .hero-content .serie-details .age {
+  margin-right: 15px;
+  border: 0.5px solid white;
+  padding: 0px 9px 0px 10px;
+  border-radius: 5px;
+}
+.wrapper .hero .hero-content .serie-details .bold {
+  margin-right: 15px;
 }
 .wrapper .hero .hero-content .hero-flywheel {
   display: inline-block;
   padding-bottom: 0.9em;
   font-size: 1.4em;
   font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .wrapper .hero .hero-content .hero-flywheel {
+    display: none;
+  }
 }
 .wrapper .hero .hero-content .hero-title {
   display: flex;
@@ -76,18 +112,70 @@ html {
   font-size: 6.1em;
   font-weight: 700;
   line-height: 0.85em;
+  max-width: 500px;
+}
+@media (max-width: 1024px) {
+  .wrapper .hero .hero-content .hero-title {
+    font-size: 2.5em;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-left: -2px;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper .hero .hero-content .hero-title {
+    font-size: 2.1em;
+    padding-top: 50px;
+    padding-bottom: 23px;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper .hero .hero-content .hero-title {
+    font-size: 2em;
+  }
 }
 .wrapper .hero .hero-content .hero-button {
   background-color: rgba(157, 151, 151, 0.541521);
   border-radius: 9px;
   color: #e9e9e9;
-  margin-top: 0.7em;
+  margin-top: 1.2em;
   margin-bottom: 1.4em;
   margin-right: 1.7em;
   padding: 20px 41px 18px 41px;
   border: none;
   font-size: 1em;
   font-weight: 200;
+}
+@media (max-width: 1024px) {
+  .wrapper .hero .hero-content .hero-button {
+    padding: 18px 47px 18px 47px;
+    margin-bottom: 50px;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper .hero .hero-content .hero-button {
+    padding: 18px 39px 18px 39px;
+    border: none;
+    margin-left: -10px;
+    font-size: 1em;
+  }
+}
+@media (max-width: 376px) {
+  .wrapper .hero .hero-content .hero-button {
+    padding: 15px 41px 15px 41px;
+    margin-right: 25px;
+    border: none;
+    font-size: 1em;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper .hero .hero-content .hero-button {
+    padding: 15px 28px 15px 28px;
+    border: none;
+    font-size: 1em;
+    margin-right: 24px;
+  }
 }
 .wrapper .hero .hero-content .hero-button:hover {
   background-color: rgba(250, 250, 250, 0.479);
@@ -101,11 +189,27 @@ html {
   max-width: 450px;
   line-height: 1.4em;
 }
+@media (max-width: 1024px) {
+  .wrapper .hero .hero-content .hero-paragraph {
+    display: none;
+  }
+}
 .wrapper .series-wrapper {
   color: #ffffff;
   background-color: #000000;
   padding-left: 4em;
   padding-bottom: 50px;
+}
+@media (max-width: 1024px) {
+  .wrapper .series-wrapper {
+    padding-left: 2em;
+  }
+}
+.wrapper .series-wrapper .hyperlink {
+  height: 5px;
+  width: 200px;
+  position: relative;
+  bottom: 70px;
 }
 .wrapper .series-wrapper .series-title {
   font-size: 1.2em;
